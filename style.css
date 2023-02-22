@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+*{
+    /* font-family: sans-serif; */
+}
+.screenshot{
+    margin: auto;
+    border: 4px solid black;
+}
+a{
+    padding-top: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color:yellowgreen;
+}
+
+a:hover{
+    color: red;
+}
+#quote_card{
+    text-align: center;
+}
+#quote_card a{
+    color: cornflowerblue;
+}
+#quote_card a:hover{
+    color: black;
+}
+#quote_card h3{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    left: 0 auto;
+   font-family: sans-serif;
+}
+#quote_card h1{
+    font-family: monospace;
+    color:cornflowerblue;
+}
+
+#about_me_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#about_me_photo{
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+#about_me_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_me_title_designation{
+    font-size: 18px;
+    font-family:'Roboto',sans-serif;
+}
+
+#about_me_info{
+    margin-top: 20px;
+    margin: auto;
+    width: 700px;
+    text-align: justify;
+    padding: 12px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+@media only screen and (max-device-width: 480px) {
+  
+    #about_me_photo{
+        height: 200px;
+        width: 200px;
+    }
+    #about_me_info{
+        width: 400px;
+    }
+    .screenshot{
+        visibility: hidden;
+    }
+}
