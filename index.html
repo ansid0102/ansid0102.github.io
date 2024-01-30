@@ -5,44 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Welcome</title>
-    <link rel="shortcut icon" href="/static/profile_square.jpg" type="image/x-icon">
+    <title>AneeshSid</title>
 </head>
-<body>
-    <header id="quote_card">
-        <h3>This Week's Quote</h3>
-        <h1>"You can't shake hands with a clenched fist"-Indira Gandhi</h1>
-        <nav>
-            <a>blog</a>
-        </nav>
-    </header>
-<div id="about_me_card">
-    <div id="about_me_header">
-        <img src="/static/profile_square.jpg" width="158" id="about_me_photo"/>
-        <div id="about_me_title_designation">
-            <h1>K Hari Aneesh Siddhartha</h1>
-            <h2>Tech Enthusiast | Software Developer | Student </h2>
+    <body>
+        <header>
+            <h1 id="aneesh">Aneesh!</h1>
+            <a href="#projects">Projects</a>
+        </header>
+
+        <div id="about_me">
+            <p>I am a software developer with a background in computer science.
+
+                I earned my B.Tech in Computer Science from VIT-AP University in 2023. While my academic pursuits have primarily focused on computer science, I have a passion for exploring new technologies and experimenting with software development projects.
+                
+                Prior to transitioning into industry, I briefly explored academia, engaging in research activities during my undergraduate studies. Although I did not pursue advanced degrees, my time in academia provided me with a strong foundation in computer science principles.
+
+                <br>
+                <br><b>Current Role: 5G Software Engineer @ Jio Platforms Limited</b>
+            </p>
+
+            <img src="/static/profile_pic.jpg"/ width="400" height="400" >
         </div>
-    </div>
-    <div id="about_me_info">
-        <p>I'm currently a final year(Computer Science) student at VIT-AP University. I'm very enthusiastic about tech in general.
-            I code in Java and Python. I've demonstrable skills in these languages. In python, I've a good working knowledge of the flask framework. I'd even contributed to projects relating to the flask framework.
-        </p>
-            <br>Like:<br>
-            <a href="https://github.com/developersIndia/saadhan">SAADHAN-DEVELOPERS INDIA</a>
-            <p>These are my Academic and Personal Projects: </p>
-            <a href="https://ansid0102.github.io/Cow_Bull_GAME/">Cow Bull Game</a>
-            <br>
-            <h3>Sample Screenshot</h3>
-            <img src="https://user-images.githubusercontent.com/78897025/198826136-165e27cb-6ddb-4f23-b7e1-121d202bfa57.png" alt="COW_BULL" class="screenshot">
-            <br><br>
-            <a href="https://github.com/ansid0102/MySock">Project ON Java Socets</a>
-            <br>
-            <a href="https://user-images.githubusercontent.com/78897025/209644857-a4d0aa3c-9b12-47cb-b728-781d17eb695b.png" style="color: blue;">Screenshot</a><br><br>
-            <h2>Github Profile</h2>
-            <img src="https://github-profile-trophy.vercel.app/?username=ansid0102" alt="ansid0102" />    
-            <a href="https://github.com/ansid0102">Link</a>
-    </div>
-</div>
-</body>
+
+        <footer class="footer">
+            K Hari Aneesh Siddhartha © 2024.
+        </footer>
+    </body>
+    <script>
+        function changeColor() {
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        var aneeshElement = document.getElementById('aneesh');
+        aneeshElement.style.color = randomColor;
+    }
+    setInterval(changeColor, 1000);
+    </script>
 </html>
